@@ -39,22 +39,6 @@ export default function RegisterWorker() {
       alert('Error registering: ' + error.message);
       setLoading(false);
     } else {
-      // Send email notification
-      try {
-        await fetch('/api/notify', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            name: formData.name,
-            skill_category: formData.skill_category,
-            village: formData.village,
-            phone: formData.phone
-          })
-        });
-      } catch (err) {
-        console.error('Failed to send notification:', err);
-      }
-
       setSuccess(true);
       setLoading(false);
     }
