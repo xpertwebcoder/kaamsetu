@@ -50,20 +50,20 @@ export default function AdminLayout({ children }) {
   return (
     <div className="min-h-screen bg-gray-50 flex">
       {/* Sidebar */}
-      <aside className="w-64 bg-slate-900 text-white flex flex-col hidden md:flex fixed h-full z-20">
-        <div className="p-6 border-b border-slate-800 flex items-center">
+      <aside className="w-64 bg-white text-gray-900 flex flex-col hidden md:flex fixed h-full z-20 border-r border-gray-200">
+        <div className="p-6 border-b border-gray-100 flex items-center">
           <img src="/logo.png" alt="KaamSetu Logo" className="h-[60px] w-auto object-contain" />
         </div>
         <nav className="flex-1 p-4 space-y-2">
-          <Link href="/admin/dashboard" className={`flex items-center gap-3 px-4 py-3 rounded-xl transition ${pathname === '/admin/dashboard' ? 'bg-indigo-600 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}>
+          <Link href="/admin/dashboard" className={`flex items-center gap-3 px-4 py-3 rounded-xl transition ${pathname === '/admin/dashboard' ? 'bg-indigo-600 text-white shadow-md' : 'text-gray-600 hover:bg-gray-50 hover:text-indigo-600'}`}>
             <LayoutDashboard className="w-5 h-5" />
             <span className="font-medium">Dashboard</span>
           </Link>
-          <Link href="/admin/dashboard/workers" className={`flex items-center gap-3 px-4 py-3 rounded-xl transition ${pathname.includes('/admin/dashboard/workers') || pathname.includes('/admin/dashboard/worker/') ? 'bg-indigo-600 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}>
+          <Link href="/admin/dashboard/workers" className={`flex items-center gap-3 px-4 py-3 rounded-xl transition ${pathname.includes('/admin/dashboard/workers') || pathname.includes('/admin/dashboard/worker/') ? 'bg-indigo-600 text-white shadow-md' : 'text-gray-600 hover:bg-gray-50 hover:text-indigo-600'}`}>
             <Users className="w-5 h-5" />
             <span className="font-medium">Workers</span>
           </Link>
-          <Link href="/admin/dashboard/leads" className={`flex items-center gap-3 px-4 py-3 rounded-xl transition ${pathname.includes('/admin/dashboard/leads') ? 'bg-indigo-600 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}`}>
+          <Link href="/admin/dashboard/leads" className={`flex items-center gap-3 px-4 py-3 rounded-xl transition ${pathname.includes('/admin/dashboard/leads') ? 'bg-indigo-600 text-white shadow-md' : 'text-gray-600 hover:bg-gray-50 hover:text-indigo-600'}`}>
             <MessageSquare className="w-5 h-5" />
             <span className="font-medium">Leads</span>
           </Link>
