@@ -1,5 +1,7 @@
 # KaamSetu
 
+KaamSetu is a local workforce and service platform that connects users with trusted workers like electricians, plumbers, labourers, drivers, and other skilled professionals across India through a simple and mobile-friendly experience.
+
 A rural local worker connection platform where people can find nearby workers like labour, electrician, plumber, mason, painter, driver, tractor/trolley, farm worker, etc.
 
 ## Tech Stack
